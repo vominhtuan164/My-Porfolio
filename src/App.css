@@ -22,6 +22,46 @@
 .projects-grid {
   display: flex;
 }
+.contact-body {
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height:100%;
+  background: white;
+  color: black;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  line-height: 45px;
+  font-size: 1.75em;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i{
+  font-size: 56px;
+  padding-right: 5rem;
+} 
+
 .avatar-img {
   height: 750px;
   padding-top: 5em;
