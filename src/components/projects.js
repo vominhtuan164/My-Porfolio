@@ -3,7 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, 
 
 import TodoList from './../images/TodoList.png';
 import ShoppingCart from './../images/ShoppingCart.jpg';
-
+import MyPorfolio from './../images/MyPorfolio.png';
 function Projects(props) {
   const [activeTab, setActiveTab] = useState({
     value: 0
@@ -15,10 +15,10 @@ function Projects(props) {
         <div className="projects-grid">
           {/* Projet 1: Liste des tâches */}
           <Card shadow={0} style={{ minWidth: '450px', margin: 'auto' }}>
-            <CardTitle style={{ color: 'black', height: '567px', background: `url(${TodoList}) center / cover` }}>Liste des tâches</CardTitle>
+            <CardTitle style={{ color: '#c92a2a', height: '567px', background: `url(${TodoList}) center / cover` }}>Liste des tâches</CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Une todo list (anglicisme), ou liste de tâches, est un procédé qui se veut simple et efficace pour gérer les tâches d'un projet.
+              J'ai fait ce projet uniquement avec ReactJS.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -30,10 +30,25 @@ function Projects(props) {
 
           {/* Projet 2: Panier d'achat */}
           <Card shadow={0} style={{ minWidth: '450px', margin: 'auto' }}>
-            <CardTitle style={{ color: 'black', height: '567px', background: `url(${ShoppingCart}) center / cover` }}>Panier d'achat</CardTitle>
+            <CardTitle style={{ color: '#c92a2a', height: '567px', background: `url(${ShoppingCart}) center / cover` }}>Panier d'achat</CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Un panier d'achat est un logiciel de commerce électronique qui permet aux visiteurs d'un site Internet de sélectionner des articles à acheter éventuellement.
+              J'ai fait ce projet en utilisant ReactJS et Redux.
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+            </CardActions>
+            <CardMenu style={{ color: 'black' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Projet 3: Ma portefeuille */}
+          <Card shadow={0} style={{ minWidth: '450px', margin: 'auto' }}>
+            <CardTitle style={{ color: '#c92a2a', height: '567px', background: `url(${MyPorfolio}) center / cover` }}>Ma portefeuille</CardTitle>
+            <CardText>
+              Mon CV en ligne
+              J'ai fait ce projet en utilisant ReactJS et Redux (react-redux et redux-router).
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
