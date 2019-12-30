@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Link } from 'react-router-dom';
 import './App.css';
-
+import Main from './components/main'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="demo-big-content">
+      <Layout>
+        <Header className="header-color nav-link" title="Minh Tuan VO" scroll>
+          <Navigation>
+            <Link to="/resume" className="nav-link">Resume</Link>
+            <Link to="/about" className="nav-link">About Me</Link>
+            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+          </Navigation>
+        </Header>
+        <Drawer title="Title">
+          <Navigation>
+            <Link to="/resume" className="nav-link">Resume</Link>
+            <Link to="/about" className="nav-link">About Me</Link>
+            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+          </Navigation>
+        </Drawer>
+        <Content>
+          <div className="page-content" />
+          <Main />
+        </Content>
+      </Layout>
     </div>
   );
 }
